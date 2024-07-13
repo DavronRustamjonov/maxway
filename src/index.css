@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.active{
+  color: #fff;
+  background: #8a2be2;
+  transform: scale(.9);
+  padding: 10px 25px;
+}
+/*
+    background-color: #8a2be2;
+    border: 2px solid #8a2be2;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    transition: .3s;
+    margin: 0 15px;
+    padding: 10px 25px;*/
