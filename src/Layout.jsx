@@ -56,7 +56,7 @@ function Layout() {
           <button className='burger'><img className='burger' src={Burger} alt="burger icon" /></button>
          <a  className='layout__logo' to ="/home" >SFood</a>
         <ul className='layout__list menu'> 
-       <li className='layout__item'> <NavLink  className='layout__link' to ="/home" active >Home</NavLink></li>   
+       <li className='layout__item'> <NavLink  className='layout__link' to ="/" active >Home</NavLink></li>   
        <li className='layout__item'> <NavLink  className='layout__link' to="/filiali" active>Filiali</NavLink></li> 
        <li className='layout__item'> <NavLink  className='layout__link' to="/about" active >About</NavLink></li>   
        <li className='layout__item'> <NavLink  className='layout__link' to="/contact" active >Contact</NavLink></li>

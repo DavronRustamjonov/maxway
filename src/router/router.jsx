@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import Home from "../Home";
+import Nested from "../Nested";
 import About from "../About";
 import Contact from "../Contact";
 import Filiali from "../Filiali";
@@ -10,8 +10,14 @@ const router = createBrowserRouter([
         path: "/",
         element: <App/>,
         children: [   {
-            path: "/home",
-            element: <Home/>
+            path: "/",
+            element: <Nested/>,
+            children:[
+                { 
+                    
+
+                }
+            ]
         },
         {
             path: "/about",
