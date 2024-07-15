@@ -1,77 +1,64 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import './Layout.css'
-import Korzinka from '/korzinka-icon.png';
-import Burger from '/burger.svg';
-/*import * as React from 'react';
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
-
-export default function KeepMountedModal() {
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
-
-  return (
-    <div>
-      <Button onClick={handleOpen}>Open modal</Button>
-      <Modal
-        keepMounted
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="keep-mounted-modal-title"
-        aria-describedby="keep-mounted-modal-description"
-      >
-        <Box sx={style}>
-          <Typography id="keep-mounted-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="keep-mounted-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
-        </Box>
-      </Modal>
-    </div>
-  );
-}*/
+import { NavLink } from 'react-router-dom';
+import './Layout.css'; 
+import Korzinka from '/korzinka-icon.png'; 
+import Burger from '/burger.svg'; 
+import React, { useState } from 'react';
+import { Button, Modal } from 'antd';
 
 function Layout() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div className='layout'>
-        <div className='container layout__container'>
-          <button className='burger'><img className='burger' src={Burger} alt="burger icon" /></button>
-         <a  className='layout__logo' to ="/home" >SFood</a>
-        <ul className='layout__list menu'> 
-       <li className='layout__item'> <NavLink  className='layout__link' to ="/" active >Home</NavLink></li>   
-       <li className='layout__item'> <NavLink  className='layout__link' to="/filiali" active>Filiali</NavLink></li> 
-       <li className='layout__item'> <NavLink  className='layout__link' to="/about" active >About</NavLink></li>   
-       <li className='layout__item'> <NavLink  className='layout__link' to="/contact" active >Contact</NavLink></li>
+      <div className='container layout__container'>
+        <button className='burger'><img className='burger' src={Burger} alt="burger icon" />
+        </button>
+        <NavLink className='layout__logo' to="/home">SFood</NavLink>
+        <ul className='layout__list menu'>
+          <li className='layout__item'> <NavLink className='layout__link' to="/" exact>Home</NavLink></li>
+          <li className='layout__item'> <NavLink className='layout__link' to="/filiali">Filiali</NavLink></li>
+          <li className='layout__item'> <NavLink className='layout__link' to="/about">About</NavLink></li>
+          <li className='layout__item'> <NavLink className='layout__link' to="/contact">Contact</NavLink></li>
         </ul>
         <ul className='layout__list'>
-            <li className='layout__item'>
-                <img className='korzinka-icon' src={Korzinka} alt="korzinka icon " />
-            </li>
-            <li className='layout__item'>
-                <button className='layout__btn'>Voyti</button>
-            </li>
+          <li className='layout__item'>
+            <img className='korzinka-icon' src={Korzinka} alt="korzinka icon" />
+          </li>
+          <li className='layout__item'>
+            <Button type="primary" onClick={showModal} className='layout__btn'>Voyti</Button>
+            <Modal className='layout-modal' visible={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+              <h2 className="login-title">Добро пожаловать</h2>
+              <p className="login-text">Войдите с вашим номером телефона</p>
+              <form action="#">
+                <input className="login-input" type="tel" required placeholder="+998931487733" min="3" />
+                <button className="login-btn">Войти</button>
+                <ul className='login-list'>
+                <li className='login-item'>
+                  <p className='login-text'><p>У вас нет аккаунта?</p></p>
+                </li>
+                <li className='login-item'>
+                  <button className='login-link'>Регистрация</button>
+                </li>
+                </ul>
+              </form>
+            </Modal>
+          </li>
         </ul>
-        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Layout
+export default Layout;
