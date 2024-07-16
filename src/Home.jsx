@@ -95,28 +95,28 @@ export default function Home() {
         <img src="https://cdn.delever.uz/delever/5f985809-5a75-44bd-9209-dd4fa911169b"/>
         </SwiperSlide>
         <SwiperSlide>
-        <img class="swiper-img" src="https://cdn.delever.uz/delever/1b71b079-f375-43ca-b24b-04d0e0b9b0dd"/>
+        <img className="swiper-img" src="https://cdn.delever.uz/delever/1b71b079-f375-43ca-b24b-04d0e0b9b0dd"/>
         </SwiperSlide>
         <SwiperSlide>
-        <img class="swiper-img" src="https://cdn.delever.uz/delever/f5094e04-ad42-41d3-9989-6ebfe167a8bc"/>
-        </SwiperSlide>
-        <SwiperSlide>
-        <img src="https://cdn.delever.uz/delever/5f985809-5a75-44bd-9209-dd4fa911169b"/>
-        </SwiperSlide>
-        <SwiperSlide>
-        <img class="swiper-img" src="https://cdn.delever.uz/delever/1b71b079-f375-43ca-b24b-04d0e0b9b0dd"/>
-        </SwiperSlide>
-        <SwiperSlide>
-        <img class="swiper-img" src="https://cdn.delever.uz/delever/f5094e04-ad42-41d3-9989-6ebfe167a8bc"/>
+        <img className="swiper-img" src="https://cdn.delever.uz/delever/f5094e04-ad42-41d3-9989-6ebfe167a8bc"/>
         </SwiperSlide>
         <SwiperSlide>
         <img src="https://cdn.delever.uz/delever/5f985809-5a75-44bd-9209-dd4fa911169b"/>
         </SwiperSlide>
         <SwiperSlide>
-        <img class="swiper-img" src="https://cdn.delever.uz/delever/1b71b079-f375-43ca-b24b-04d0e0b9b0dd"/>
+        <img className="swiper-img" src="https://cdn.delever.uz/delever/1b71b079-f375-43ca-b24b-04d0e0b9b0dd"/>
         </SwiperSlide>
         <SwiperSlide>
-        <img class="swiper-img" src="https://cdn.delever.uz/delever/f5094e04-ad42-41d3-9989-6ebfe167a8bc"/>
+        <img className="swiper-img" src="https://cdn.delever.uz/delever/f5094e04-ad42-41d3-9989-6ebfe167a8bc"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src="https://cdn.delever.uz/delever/5f985809-5a75-44bd-9209-dd4fa911169b"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <img className="swiper-img" src="https://cdn.delever.uz/delever/1b71b079-f375-43ca-b24b-04d0e0b9b0dd"/>
+        </SwiperSlide>
+        <SwiperSlide>
+        <img className="swiper-img" src="https://cdn.delever.uz/delever/f5094e04-ad42-41d3-9989-6ebfe167a8bc"/>
         </SwiperSlide>
         <SwiperSlide>
         <img src="https://cdn.delever.uz/delever/5f985809-5a75-44bd-9209-dd4fa911169b"/>
