@@ -119,7 +119,7 @@ const [openModal, setopenModal] = React.useState(false);
         <ul className='layout__list menu'>
           <li className='layout__item'> <NavLink className='layout__link' to="/" exact>Главная</NavLink></li>
           <li className='layout__item'> <NavLink className='layout__link' to="/filiali">Филиалы</NavLink></li>
-          <li className='layout__item'> <NavLink className='layout__link' to="/about">нас</NavLink></li>
+          <li className='layout__item'> <NavLink className='layout__link' to="/about">Oнас</NavLink></li>
           <li className='layout__item'> <NavLink className='layout__link' to="/contact">Контакты</NavLink></li>
         </ul>
         <ul className='layout__list'>
