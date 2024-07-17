@@ -1,14 +1,14 @@
 import React from 'react';
 import Card from './Card';
 import './Card.css'; 
-import lavash1Img from '/lavash1.jpg';
-import lavash2Img from '/lavash2.jpg';
-import lavash3Img from '/lavash3.jpg';
-import lavash4Img from '/lavash4.jpg';
-import lavash5Img from '/lavash5.jpg';
-import lavash6Img from '/lavash6.jpg';
-import lavash7Img from '/lavash7.jpg';
-import lavash8Img from '/lavash8.jpg';
+import lavash1Img from '/souce1.jpg';
+import lavash2Img from '/souce2.jpg';
+import lavash3Img from '/souce3.jpg';
+import lavash4Img from '/souce4.jpg';
+import lavash5Img from '/souce5.jpg';
+import lavash6Img from '/souce6.jpg';
+import lavash7Img from '/souce7.jpg';
+import lavash8Img from '/souce8.jpg';
 
 function Souce() {
   const lavash1 = {
@@ -59,7 +59,6 @@ function Souce() {
     img: lavash8Img,
     price: 1.28
   }
-
   return (
     <div>
       <ul style={{ display: "flex", justifyContent: "space-evenly", flexWrap: "wrap", listStyle: "none" }}>
