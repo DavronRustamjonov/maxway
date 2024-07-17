@@ -1,14 +1,14 @@
 import React from 'react';
 import Card from './Card';
 import './Card.css'; 
-import lavash1Img from '/lavash1.jpg';
-import lavash2Img from '/lavash2.jpg';
-import lavash3Img from '/lavash3.jpg';
-import lavash4Img from '/lavash4.jpg';
-import lavash5Img from '/lavash5.jpg';
-import lavash6Img from '/lavash6.jpg';
-import lavash7Img from '/lavash7.jpg';
-import lavash8Img from '/lavash8.jpg';
+import lavash1Img from '/set1.jpg';
+import lavash2Img from '/set2.jpg';
+import lavash3Img from '/set3.jpg';
+import lavash4Img from '/set4.jpg';
+import lavash5Img from '/set5.jpg';
+import lavash6Img from '/set6.jpg';
+import lavash7Img from '/set7.jpg';
+import lavash8Img from '/set8.jpg';
 
 function Set() {
   const lavash1 = {

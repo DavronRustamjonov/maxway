@@ -1,14 +1,14 @@
 import React from 'react';
 import Card from './Card';
 import './Card.css'; 
-import lavash1Img from '/lavash1.jpg';
-import lavash2Img from '/lavash2.jpg';
-import lavash3Img from '/lavash3.jpg';
-import lavash4Img from '/lavash4.jpg';
-import lavash5Img from '/lavash5.jpg';
-import lavash6Img from '/lavash6.jpg';
-import lavash7Img from '/lavash7.jpg';
-import lavash8Img from '/lavash8.jpg';
+import lavash1Img from '/haggi1.jpg';
+import lavash2Img from '/haggi2.jpg';
+import lavash3Img from '/haggi3.jpg';
+import lavash4Img from '/haggi4.jpg';
+import lavash5Img from '/haggi5.jpg';
+import lavash6Img from '/haggi6.jpg';
+import lavash7Img from '/haggi7.jpg';
+import lavash8Img from '/haggi8.jpg';
 
 function Haggi() {
   const lavash1 = {

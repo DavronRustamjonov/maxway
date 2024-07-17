@@ -1,14 +1,14 @@
 import React from 'react';
 import Card from './Card';
 import './Card.css'; 
-import lavash1Img from '/lavash1.jpg';
-import lavash2Img from '/lavash2.jpg';
-import lavash3Img from '/lavash3.jpg';
-import lavash4Img from '/lavash4.jpg';
-import lavash5Img from '/lavash5.jpg';
-import lavash6Img from '/lavash6.jpg';
-import lavash7Img from '/lavash7.jpg';
-import lavash8Img from '/lavash8.jpg';
+import lavash1Img from '/pizza1.jpg';
+import lavash2Img from '/pizza2.jpg';
+import lavash3Img from '/pizza3.jpg';
+import lavash4Img from '/pizza4.jpg';
+import lavash5Img from '/pizza5.jpg';
+import lavash6Img from '/pizza6.jpg';
+import lavash7Img from '/pizza7.jpg';
+import lavash8Img from '/pizza8.jpg';
 
 function Pizza() {
   const lavash1 = {

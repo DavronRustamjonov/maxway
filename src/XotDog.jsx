@@ -1,14 +1,14 @@
 import React from 'react';
 import Card from './Card';
 import './Card.css'; 
-import lavash1Img from '/lavash1.jpg';
-import lavash2Img from '/lavash2.jpg';
-import lavash3Img from '/lavash3.jpg';
-import lavash4Img from '/lavash4.jpg';
-import lavash5Img from '/lavash5.jpg';
-import lavash6Img from '/lavash6.jpg';
-import lavash7Img from '/lavash7.jpg';
-import lavash8Img from '/lavash8.jpg';
+import lavash1Img from '/xotdog1.jpg';
+import lavash2Img from '/xotdog2.jpg';
+import lavash3Img from '/xotdog3.jpg';
+import lavash4Img from '/xotdog4.jpg';
+import lavash5Img from '/xotdog5.jpg';
+import lavash6Img from '/xotdog6.jpg';
+import lavash7Img from '/xotdog7.jpg';
+import lavash8Img from '/xotdog8.jpg';
 
 function Xotdog() {
   const lavash1 = {
