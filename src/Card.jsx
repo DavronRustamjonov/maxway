@@ -2,7 +2,7 @@ import './Card.css'
 import React from 'react'
 const Card = ({data}) => {
   return (
-    <div className='container'>
+    <div>
       <div className='card-container'>
         <div className='card-box'>
             <img className='card-pic' src={data.img} alt=""/>

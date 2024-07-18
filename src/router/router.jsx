@@ -19,6 +19,7 @@ import Bread from "../Bread";
 import Souce from "../Souce";
 import Donar from "../Donar";
 import Free from "../Free";
+import FilialCard from "../FilialCard";
 /*          Menu End             */
 
 const router = createBrowserRouter([
@@ -103,7 +104,12 @@ const router = createBrowserRouter([
             path: "/filiali",
             element: <Filiali/>,
 
+        },
+        {
+            path:"/filial-card",
+            element :<FilialCard/>
         }
+
         ]
 
     }

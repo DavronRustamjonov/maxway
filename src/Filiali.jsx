@@ -1,10 +1,11 @@
 import React from 'react';
 import './Filiali.css';
+import { Link } from 'react-router-dom';
 function Filiali() {
   return (
     <div className='filiali'>
       <div className='container filiali__container'>
-       <a className='filiali-link' href="#" target="_blank" rel="noopener noreferrer"><ul className='filiali__list'>
+       <Link className='filiali-link' to="/filial-card" target="_blank" rel="noopener noreferrer"><ul className='filiali__list'>
           <li className='filiali__item'>
             <h2 className='filiali__title'>MaxWay Magic City</h2>
              
@@ -16,9 +17,9 @@ function Filiali() {
             <p className='filiali__text'>10:00-03:00</p>
           </li>
         </ul>
-        </a> 
+        </Link> 
         
-       <a className='filiali-link' href="#" target="_blank" rel="noopener noreferrer"> <ul className='filiali__list'>
+       <Link className='filiali-link' href="#" target="_blank" rel="noopener noreferrer"> <ul className='filiali__list'>
         <li className='filiali__item'>
             <h2 className='filiali__title'>MaxWay Tashkent City</h2>
              
@@ -30,8 +31,8 @@ function Filiali() {
             <p className='filiali__text'>10:00-03:00</p>
           </li>
         </ul>
-        </a>
-        <a className='filiali-link' href="#" target="_blank" rel="noopener noreferrer"><ul className='filiali__list'>
+        </Link>
+        <Link className='filiali-link' href="#" target="_blank" rel="noopener noreferrer"><ul className='filiali__list'>
         <li className='filiali__item'>
             <h2 className='filiali__title'>MaxWay Chilanzar City</h2>
              
@@ -44,7 +45,7 @@ function Filiali() {
           </li>
 
         </ul>
-        </a>
+        </Link>
       </div>
     </div>
   )

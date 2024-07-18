@@ -62,7 +62,7 @@ function Lavash() {
 
   return (
     <div>
-      <ul style={{ display: "flex", justifyContent: "space-evenly", flexWrap: "wrap", listStyle: "none" }}>
+      <ul style={{ display: "flex", flexWrap: "wrap", listStyle: "none"  }}>
         <li><Card data={lavash1} /></li>
         <li><Card data={lavash2} /></li>
         <li><Card data={lavash3} /></li>

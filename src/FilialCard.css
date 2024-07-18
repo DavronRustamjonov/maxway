@@ -1,0 +1,83 @@
+.filial-card-container{
+    margin: 120px auto;
+    font-family: sans-serif;
+    
+}
+body{
+    background: #f6f6f6;
+}
+.filial-box{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 12px;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 4px 12px 0px rgb(235, 229, 229);
+}
+.filial-text{
+    font-size: 18px;
+    line-height: 22px;
+    line-height: 140%;
+    margin: 15px 0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+.filial-title{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39px;
+    padding-bottom: 20px;
+    
+    text-align: left;
+}
+.filial-right{
+    padding: 0 15px 0 20px;
+    width: 100%;
+    border: none;
+    
+}
+.filial-link{
+    text-decoration: none;
+    color: black;
+    
+}
+.filial-thumb{
+    height: 200px;
+    padding-top: 8px;
+    width: 100%;
+}
+
+.filial-iframe{
+    border-radius: 12px;
+    width: 100%;
+    height:100%;
+    border: none;
+}
+.filial-left{
+    padding: 0 15px 0 20px;
+}
+
+
+@media (max-width:920px){
+    .filial-box{
+        flex-direction: column-reverse;
+    }
+    .filial-right{
+        width: 100%;
+        border: none;
+        height: 300px
+
+    }
+    .filial-left{
+        margin-top: 10px;
+        
+    }
+  
+}

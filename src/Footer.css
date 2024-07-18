@@ -45,9 +45,8 @@
 }
 .wrapper__list{
      display: flex;
-     justify-content: flex-start;
      flex-wrap:wrap ;
-     gap: 30px;
+     gap: 20px;
      list-style: none;
 }
 .footer__link{
@@ -131,12 +130,7 @@
 .footer__line{
     margin: 20px 20px ;
 }
-.footer__next-text{
-    padding: 20px 20px;
-}
-.footer__next-link{
-    padding: 20px 20px;
-}
+
 
 
   
@@ -167,12 +161,16 @@
     display: block;
     text-align: center;
 }
+.wrapper__list{
+    justify-content: space-between;
+}
   
   }
   @media(max-width:420px){
   .container{
       width: 300px;
   }
+  
 
   
   
