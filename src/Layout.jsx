@@ -132,14 +132,7 @@ function Layout() {
   return (
     <div className='layout'>
       <div className='container layout__container'>
-        <div>
-          <Button onClick={toggleDrawer(true)}>
-            <img className='burger' src={Burger} alt="burger icon" />
-          </Button>
-          <Drawer open={open} onClose={toggleDrawer(false)}>
-            {DrawerList}
-          </Drawer>
-        </div>
+        
 
 
 
@@ -156,7 +149,7 @@ function Layout() {
             <img className='korzinka-icon' src={Korzinka} alt="korzinka icon" />
           </li>
 
-
+             
           
           <li className='layout__item'>
            
@@ -218,6 +211,16 @@ function Layout() {
               <option  className='layout-select' value="ru">Ru</option>
               <option  className='layout-select' value="eng">Eng</option>
             </select></li>
+            <li className='layout__item'>
+            <div>
+          <Button onClick={toggleDrawer(true)}>
+            <img className='burger' src={Burger} alt="burger icon" />
+          </Button>
+          <Drawer open={open} onClose={toggleDrawer(false)}>
+            {DrawerList}
+          </Drawer>
+        </div>
+            </li>
         </ul>
       </div>
     </div>

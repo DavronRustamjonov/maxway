@@ -4,6 +4,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     list-style: none;
+    gap:10px;
 }
 .nestedMenu__link{
     text-decoration: none;
