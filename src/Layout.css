@@ -6,6 +6,10 @@
     z-index: 1000;
     background: #fff;
 }
+.layout-select{
+    border: none;
+    
+}
 .layout__container {
     display: flex;
     justify-content: space-between;

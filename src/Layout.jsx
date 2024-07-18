@@ -18,7 +18,8 @@ import CallIcon from '@mui/icons-material/Call';
 import InfoIcon from '@mui/icons-material/Info';
 import RoomIcon from '@mui/icons-material/Room';
 import HomeIcon from '@mui/icons-material/Home';
-
+import { useTranslation } from 'react-i18next';
+ 
 const style = {
   position: 'absolute',
   top: '50%',
@@ -33,6 +34,13 @@ const style = {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 function Layout() {
+  //Til
+  const {t, i18n} = useTranslation();
+  console.log(i18n,"i18nn")
+  const  changeLanguage=(lang)=>{
+    console.log(lang.target.value,"langg")
+    i18n.changeLanguage(lang.target.value)
+  }
   //Send massage 
   const [number, setNumber] = React.useState("");
   const SendMassage = () => {
@@ -138,22 +146,28 @@ function Layout() {
 
         <NavLink className='layout__logo' to="/home">SFood</NavLink>
         <ul className='layout__list menu'>
-          <li className='layout__item'> <NavLink className='layout__link' to="/" exact>Главная</NavLink></li>
-          <li className='layout__item'> <NavLink className='layout__link' to="/filiali">Филиалы</NavLink></li>
-          <li className='layout__item'> <NavLink className='layout__link' to="/about">Oнас</NavLink></li>
-          <li className='layout__item'> <NavLink className='layout__link' to="/contact">Контакты</NavLink></li>
+          <li className='layout__item'> <NavLink className='layout__link' to="/" exact>{t('layout.layout-link-ru1')}</NavLink></li>
+          <li className='layout__item'> <NavLink className='layout__link' to="/filiali">{t('layout.layout-link-ru2')}</NavLink></li>
+          <li className='layout__item'> <NavLink className='layout__link' to="/about">{t('layout.layout-link-ru3')}</NavLink></li>
+          <li className='layout__item'> <NavLink className='layout__link' to="/contact">{t('layout.layout-link-ru4')}</NavLink></li>
         </ul>
         <ul className='layout__list'>
           <li className='layout__item'>
             <img className='korzinka-icon' src={Korzinka} alt="korzinka icon" />
           </li>
+
+
+          
           <li className='layout__item'>
+           
+           
+           
 
 
 
 
             <div>
-              <Button onClick={handleOpen} className='layout__btn'>Voyti</Button>
+              <Button onClick={handleOpen} className='layout__btn'>{t('layout.layout-btn')}</Button>
               <Modal
                 open={openModal}
                 onClose={handleClose}
@@ -198,6 +212,12 @@ function Layout() {
 
 
           </li>
+          <li className='layout__item'>
+            <select className='layout-select' onChange={changeLanguage} value={i18n.language} name="#" id="">
+              <option className='layout-select' value="uz">Uz</option>
+              <option  className='layout-select' value="ru">Ru</option>
+              <option  className='layout-select' value="eng">Eng</option>
+            </select></li>
         </ul>
       </div>
     </div>
